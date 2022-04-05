@@ -155,7 +155,7 @@ namespace StickersTemplate
                     if (queryValue?.QueryOptions != null)
                     {
                         skip = queryValue.QueryOptions.Skip;
-                        count = queryValue.QueryOptions.Count;
+                        // count = queryValue.QueryOptions.Count;
                     }
                 }
 
