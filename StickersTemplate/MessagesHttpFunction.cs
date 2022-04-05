@@ -163,7 +163,7 @@ namespace StickersTemplate
                 var stickerSet = await stickerSetRepository.FetchStickerSetAsync();
                 await stickerSetIndexer.IndexStickerSetAsync(stickerSet);
                 var stickers = await stickerSetIndexer.FindStickersByQuery(query, skip, count);
-                logger.LogInformation(count);
+                logger.LogInformation(count.ToString());
                 var result = new ComposeExtensionResponse
                 {
                     ComposeExtensionResult = new ComposeExtensionResult
